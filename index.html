@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Goularte Gás e Água em Porto Alegre | Gás com Brinde</title>
+  <meta name="description" content="Goularte Gás e Água em Porto Alegre. Nota 4,9 no Google, mais de 1.180 avaliações, atendimento todos os dias, gás de cozinha, água mineral 20L e brinde no pedido de gás." />
+
+  <style>
+    :root {
+      --navy: #08254a;
+      --navy-2: #0d396f;
+      --red: #d82435;
+      --red-dark: #b71928;
+      --gold: #f7c948;
+      --cream: #fff8ea;
+      --ice: #f4f7fb;
+      --line: #e4e9f2;
+      --text: #142033;
+      --muted: #64748b;
+      --white: #ffffff;
+      --shadow: 0 18px 50px rgba(8, 37, 74, .12);
+      --soft-shadow: 0 10px 28px rgba(8, 37, 74, .08);
+      --radius: 28px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--ice);
+      line-height: 1.5;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .page {
+      overflow: hidden;
+    }
+
+    .announcement {
+      background: var(--navy);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 10px 18px;
+      text-align: center;
+    }
+
+    .announcement span {
+      color: var(--gold);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255,255,255,.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(226,232,240,.9);
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .logo {
+      height: 54px;
+      max-width: 220px;
+      object-fit: contain;
+    }
+
+    .brand-text {
+      border-left: 1px solid var(--line);
+      padding-left: 14px;
+      font-size: 13px;
+      color: var(--muted);
+      display: block;
+    }
+
+    .brand-text strong {
+      display: block;
+      color: var(--navy);
+      font-size: 14px;
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      white-space: nowrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 800;
+      line-height: 1.1;
+      text-align: center;
+      transition: .18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      filter: brightness(.98);
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: var(--red);
+      box-shadow: 0 10px 24px rgba(216, 36, 53, .25);
+    }
+
+    .btn-primary:hover { background: var(--red-dark); }
+
+    .btn-navy {
+      color: #fff;
+      background: var(--navy);
+    }
+
+    .btn-light {
+      color: var(--navy);
+      background: #fff;
+      border-color: var(--line);
+    }
+
+    .btn-gold {
+      color: var(--navy);
+      background: var(--gold);
+      box-shadow: 0 10px 24px rgba(247, 201, 72, .25);
+    }
+
+    .hero {
+      position: relative;
+      padding: 70px 20px 56px;
+      background:
+        radial-gradient(circle at 80% 10%, rgba(247,201,72,.28), transparent 30%),
+        radial-gradient(circle at 10% 20%, rgba(216,36,53,.10), transparent 28%),
+        linear-gradient(135deg, #ffffff 0%, #f2f6fb 58%, #edf4ff 100%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -130px auto;
+      width: 360px;
+      height: 360px;
+      background: rgba(8,37,74,.06);
+      border-radius: 999px;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border: 1px solid var(--line);
+      color: var(--navy);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 8px 22px rgba(8,37,74,.05);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: .98;
+      letter-spacing: -2.2px;
+      color: var(--navy);
+    }
+
+    .hero-subtitle {
+      margin: 20px 0 0;
+      max-width: 690px;
+      font-size: 20px;
+      color: var(--muted);
+    }
+
+    .gift-panel {
+      margin: 26px 0 0;
+      max-width: 720px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: center;
+      background: var(--cream);
+      border: 1px solid #f7df91;
+      border-radius: 24px;
+      padding: 18px;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .gift-icon {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: #fff;
+      font-size: 30px;
+    }
+
+    .gift-panel strong {
+      display: block;
+      color: var(--navy);
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    .gift-panel p {
+      margin: 0;
+      color: #6b5315;
+      font-weight: 650;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .stat {
+      background: rgba(255,255,255,.9);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 16px;
+      box-shadow: 0 8px 26px rgba(8,37,74,.05);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--navy);
+      font-size: 22px;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .order-card {
+      background: #fff;
+      border-radius: 34px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(226,232,240,.85);
+    }
+
+    .google-rating {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #fff8df, #ffffff);
+      border: 1px solid #f4df9a;
+      margin-bottom: 20px;
+    }
+
+    .stars {
+      color: #f2b400;
+      letter-spacing: 1px;
+      font-size: 20px;
+      white-space: nowrap;
+    }
+
+    .google-rating strong {
+      display: block;
+      color: var(--navy);
+    }
+
+    .google-rating small {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .order-card h2 {
+      margin: 0 0 6px;
+      color: var(--navy);
+      font-size: 28px;
+      letter-spacing: -.8px;
+    }
+
+    .order-card > p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .order-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .order-item {
+      display: grid;
+      grid-template-columns: 48px 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 14px;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      transition: .18s ease;
+    }
+
+    .order-item:hover {
+      background: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 26px rgba(8,37,74,.08);
+    }
+
+    .item-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      background: #fff;
+      border-radius: 16px;
+      font-size: 24px;
+      border: 1px solid var(--line);
+    }
+
+    .order-item strong {
+      display: block;
+      color: var(--navy);
+    }
+
+    .order-item small {
+      display: block;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .arrow {
+      color: var(--red);
+      font-weight: 900;
+      font-size: 22px;
+    }
+
+    section {
+      padding: 64px 20px;
+    }
+
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 22px;
+      align-items: end;
+      margin-bottom: 26px;
+    }
+
+    .section-head h2,
+    .simple-head h2 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      color: var(--navy);
+    }
+
+    .section-head p,
+    .simple-head p {
+      margin: 10px 0 0;
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .product {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 20px;
+      box-shadow: var(--soft-shadow);
+      display: flex;
+      flex-direction: column;
+      min-height: 238px;
+    }
+
+    .product-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .product strong {
+      color: var(--navy);
+      font-size: 21px;
+    }
+
+    .product p {
+      margin: 8px 0 18px;
+      color: var(--muted);
+      flex: 1;
+    }
+
+    .product .btn {
+      width: 100%;
+      min-height: 44px;
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    .why {
+      background: #fff;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .why-card {
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 24px;
+    }
+
+    .why-card .icon {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .why-card strong {
+      display: block;
+      color: var(--navy);
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .why-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .reviews {
+      background: linear-gradient(135deg, #f8fafc, #eef4fb);
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .review {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .review p {
+      color: #26364f;
+      font-size: 17px;
+      margin: 12px 0 18px;
+    }
+
+    .review strong {
+      color: var(--navy);
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr .88fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .info-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 28px;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .info-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .info-row {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 12px;
+      align-items: start;
+      color: var(--muted);
+    }
+
+    .info-row b {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 2px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .chip {
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 9px 12px;
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .faq {
+      background: #fff;
+    }
+
+    .faq-list {
+      max-width: 860px;
+      margin-top: 26px;
+    }
+
+    details {
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px 20px;
+      margin-bottom: 12px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--navy);
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    details p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .final-cta {
+      padding: 44px 20px 72px;
+      background: var(--ice);
+    }
+
+    .final-box {
+      max-width: 1180px;
+      margin: 0 auto;
+      background:
+        radial-gradient(circle at 14% 12%, rgba(247,201,72,.25), transparent 26%),
+        linear-gradient(135deg, var(--navy), var(--navy-2));
+      border-radius: 36px;
+      padding: 44px 28px;
+      color: #fff;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .final-box h2 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.08;
+      letter-spacing: -1.4px;
+    }
+
+    .final-box p {
+      color: #dce8f8;
+      margin: 14px auto 24px;
+      max-width: 640px;
+      font-size: 18px;
+    }
+
+    footer {
+      padding: 28px 20px 92px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .floating {
+      position: fixed;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      z-index: 100;
+      display: none;
+    }
+
+    .floating .btn {
+      width: 100%;
+      box-shadow: 0 14px 36px rgba(0,0,0,.28);
+    }
+
+    @media (max-width: 1020px) {
+      .hero-grid,
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 780px) {
+      .brand-text,
+      .nav-actions .btn-navy {
+        display: none;
+      }
+
+      .logo {
+        height: 46px;
+        max-width: 190px;
+      }
+
+      .hero {
+        padding-top: 44px;
+      }
+
+      .gift-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .why-grid,
+      .review-grid,
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .order-item {
+        grid-template-columns: 44px 1fr auto;
+      }
+
+      .floating {
+        display: block;
+      }
+    }
+  
+    .product-icon img,
+    .item-icon img,
+    .why-card .icon img {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 520px;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at center, rgba(247,201,72,.20), transparent 42%),
+        linear-gradient(145deg, rgba(255,255,255,.95), rgba(248,250,252,.95));
+      border: 1px solid var(--line);
+      border-radius: 38px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 999px;
+      background: rgba(216,36,53,.08);
+      top: -110px;
+      right: -90px;
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 999px;
+      background: rgba(8,37,74,.07);
+      bottom: -90px;
+      left: -80px;
+    }
+
+    .hero-gas-img {
+      width: min(78%, 360px);
+      height: auto;
+      object-fit: contain;
+      position: relative;
+      z-index: 2;
+      filter: drop-shadow(0 22px 34px rgba(8,37,74,.24));
+    }
+
+    .floating-seal {
+      position: absolute;
+      z-index: 3;
+      background: white;
+      border: 1px solid var(--line);
+      box-shadow: var(--soft-shadow);
+      border-radius: 22px;
+      padding: 14px 16px;
+      font-weight: 900;
+      color: var(--navy);
+    }
+
+    .seal-rating {
+      top: 30px;
+      left: 26px;
+    }
+
+    .seal-gift {
+      right: 24px;
+      bottom: 34px;
+      background: var(--cream);
+      border-color: #f4df9a;
+    }
+
+    .seal-phone {
+      left: 24px;
+      bottom: 38px;
+      color: white;
+      background: var(--navy);
+      border-color: rgba(255,255,255,.12);
+    }
+
+    .floating-seal small {
+      display: block;
+      color: var(--muted);
+      font-weight: 750;
+      margin-top: 2px;
+    }
+
+    .seal-phone small {
+      color: #dbeafe;
+    }
+
+    .visual-logo {
+      position: absolute;
+      z-index: 3;
+      top: 26px;
+      right: 28px;
+      width: 116px;
+      height: 116px;
+      display: grid;
+      place-items: center;
+      border-radius: 28px;
+      background: white;
+      border: 1px solid var(--line);
+      box-shadow: var(--soft-shadow);
+      padding: 12px;
+    }
+
+    .visual-logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 18px;
+    }
+
+    @media (max-width: 1020px) {
+      .hero-visual {
+        min-height: 420px;
+      }
+
+      .hero-gas-img {
+        width: min(70%, 300px);
+      }
+    }
+
+    @media (max-width: 780px) {
+      .hero-visual {
+        min-height: 360px;
+        border-radius: 30px;
+      }
+
+      .visual-logo {
+        width: 86px;
+        height: 86px;
+        top: 18px;
+        right: 18px;
+      }
+
+      .floating-seal {
+        padding: 11px 13px;
+        font-size: 14px;
+      }
+
+      .seal-rating {
+        top: 18px;
+        left: 18px;
+      }
+
+      .seal-phone {
+        left: 18px;
+        bottom: 22px;
+      }
+
+      .seal-gift {
+        right: 18px;
+        bottom: 22px;
+      }
+    }
+
+  
+    .product-img img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .agua-img img {
+      width: 48px;
+      height: 48px;
+    }
+
+    .product-icon.product-img {
+      background: #fff;
+    }
+
+    .product:hover .product-img img {
+      transform: scale(1.04);
+    }
+
+    .product-img img {
+      transition: .18s ease;
+    }
+
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Goularte - Gás e Água em Porto Alegre",
+    "alternateName": "Goularte Distribuidora de Gás | Gás do Povo",
+    "description": "Comercial de gás e água em Porto Alegre. Gás de cozinha 13kg, P5, P20, P45 e água mineral 20L. Atendimento todos os dias, incluindo domingos e feriados.",
+    "telephone": "0800 600 1002",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Saturnino de Brito, 299 - Vila Jardim",
+      "addressLocality": "Porto Alegre",
+      "addressRegion": "RS",
+      "postalCode": "91320-001",
+      "addressCountry": "BR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1186"
+    },
+    "areaServed": "Porto Alegre, RS",
+    "openingHours": "Mo-Su 08:00-22:00"
+  }
+  </script>
+</head>
+
+<body>
+  <div class="page">
+    <div class="announcement">
+      <span>🎁 Brinde no pedido de gás:</span> escolha Guaraná 1,5L ou Detergente Líquido 500ml
+    </div>
+
+    <header>
+      <div class="nav">
+        <a class="logo-wrap" href="#top" aria-label="Goularte Gás e Água">
+          <img class="logo" src="https://simgbb.com/avatar/8LjcWyDH8Vt9.jpg" alt="Goularte Distribuidora de Gás">
+          <span class="brand-text">
+            <strong>Gás e Água em Porto Alegre</strong>
+            Desde Vila Jardim para a sua casa
+          </span>
+        </a>
+
+        <div class="nav-actions">
+          <a class="btn btn-navy" href="tel:08006001002" onclick="trackConversion('ligacao_topo')">0800 600 1002</a>
+          <a class="btn btn-primary" href="https://wa.me/5551984298427?text=Olá!%20Quero%20fazer%20um%20pedido%20na%20Goularte." onclick="trackConversion('whatsapp_topo')">Pedir no WhatsApp</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">⭐ 4,9 no Google · 1.186 avaliações</div>
+            <h1>Gás e água com atendimento de confiança em Porto Alegre.</h1>
+            <p class="hero-subtitle">
+              Peça P5, P13, P20, P45 ou água mineral 20L com a Goularte. Atendimento todos os dias, incluindo domingos e feriados.
+            </p>
+
+            <div class="gift-panel">
+              <div class="gift-icon">🎁</div>
+              <div>
+                <strong>Pedido de gás com brinde</strong>
+                <p>Escolha entre Guaraná 1,5L ou Detergente Líquido 500ml. Consulte disponibilidade no atendimento.</p>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://wa.me/5551984298427?text=Olá!%20Quero%20pedir%20gás%20e%20ganhar%20meu%20brinde." onclick="trackConversion('pedido_gas_brinde')">Pedir gás com brinde</a>
+              <a class="btn btn-gold" href="https://wa.me/5551984298427?text=Olá!%20Quero%20pedir%20água%20mineral%2020L." onclick="trackConversion('pedido_agua')">Pedir água 20L</a>
+              <a class="btn btn-light" href="tel:08006001002" onclick="trackConversion('ligacao_hero')">Ligar grátis</a>
+            </div>
+
+            <div class="stats">
+              <div class="stat"><strong>4,9</strong><span>nota no Google</span></div>
+              <div class="stat"><strong>1.186</strong><span>avaliações</span></div>
+              <div class="stat"><strong>7 dias</strong><span>domingos e feriados</span></div>
+              <div class="stat"><strong>0800</strong><span>ligação gratuita</span></div>
+            </div>
+          </div>
+
+          <aside>
+            <div class="hero-visual" aria-label="Gás Goularte">
+              <div class="visual-logo">
+                <img src="https://simgbb.com/avatar/8LjcWyDH8Vt9.jpg" alt="Logo Goularte">
+              </div>
+              <div class="floating-seal seal-rating">⭐ 4,9<small>1.186 avaliações</small></div>
+              <img class="hero-gas-img" src="https://i.ibb.co/fVbS9bX5/100f9b9edd82a733.png" alt="Botijão de gás">
+              <div class="floating-seal seal-phone">0800 600 1002<small>ligação gratuita</small></div>
+              <div class="floating-seal seal-gift">🎁 Brinde<small>no pedido de gás</small></div>
+            </div>
+
+            <div class="order-card" aria-label="Faça seu pedido" style="margin-top:18px;">
+            <div class="google-rating">
+              <div>
+                <div class="stars">★★★★★</div>
+                <strong>Clientes recomendam</strong>
+                <small>Rapidez, educação e confiança</small>
+              </div>
+              <div style="font-weight:900;color:var(--navy);font-size:26px;">4,9</div>
+            </div>
+
+            <h2>O que você precisa hoje?</h2>
+            <p>Mensagem pronta para pedir mais rápido.</p>
+
+            <div class="order-list">
+              <a class="order-item" href="https://wa.me/5551984298427?text=Olá!%20Quero%20pedir%20um%20P13%20com%20brinde." onclick="trackConversion('card_p13')">
+                <span class="item-icon"><img src="https://i.ibb.co/fVbS9bX5/100f9b9edd82a733.png" alt="Botijão de gás"></span>
+                <span><strong>P13 - Gás 13kg</strong><small>Gás de cozinha + brinde</small></span>
+                <span class="arrow">→</span>
+              </a>
+
+              <a class="order-item" href="https://wa.me/5551984298427?text=Olá!%20Quero%20pedir%20água%2020%20litros." onclick="trackConversion('card_agua')">
+                <span class="item-icon"><img src="https://i.ibb.co/rR26mdQh/C34-A772-E-32-C1-4-B3-A-AC77-74196217044-A.png" alt="Água mineral 20 litros"></span>
+                <span><strong>Água mineral 20L</strong><small>Bombona de água</small></span>
+                <span class="arrow">→</span>
+              </a>
+
+              <a class="order-item" href="https://wa.me/5551984298427?text=Olá!%20Quero%20consultar%20preços%20de%20P5,%20P13,%20P20,%20P45%20e%20água." onclick="trackConversion('card_precos')">
+                <span class="item-icon">💬</span>
+                <span><strong>Consultar preços</strong><small>P5, P13, P20, P45 e água</small></span>
+                <span class="arrow">→</span>
+              </a>
+
+              <a class="order-item" href="tel:08006001002" onclick="trackConversion('card_0800')">
+                <span class="item-icon">☎️</span>
+                <span><strong>Ligar agora</strong><small>0800 600 1002</small></span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <h2>Produtos</h2>
+              <p>Escolha o produto e envie seu pedido direto para o WhatsApp.</p>
+            </div>
+          </div>
+
+          <div class="product-grid">
+            <div class="product">
+              <div class="product-icon product-img"><img src="https://i.ibb.co/938Hf0yP/8bd351d3-c31f-4e8e-abb7-3bee3178bf4f.png" alt="P5 gás 5kg"></div>
+              <strong>P5</strong>
+              <p>Gás de cozinha de 5kg.</p>
+              <a class="btn btn-primary" href="https://wa.me/5551984298427?text=Olá!%20Quero%20pedir%20P5%20gás%205kg." onclick="trackConversion('produto_p5')">Pedir P5</a>
+            </div>
+
+            <div class="product">
+              <div class="product-icon product-img"><img src="https://i.ibb.co/fVbS9bX5/100f9b9edd82a733.png" alt="P13 gás de cozinha 13kg"></div>
+              <strong>P13</strong>
+              <p>Gás de cozinha 13kg com opção de brinde.</p>
+              <a class="btn btn-primary" href="https://wa.me/5551984298427?text=Olá!%20Quero%20pedir%20P13%20com%20brinde." onclick="trackConversion('produto_p13')">Pedir P13</a>
+            </div>
+
+            <div class="product">
+              <div class="product-icon product-img"><img src="https://i.ibb.co/5Wq8v4Rp/Design-sem-nome.png" alt="P20 gás 20kg"></div>
+              <strong>P20</strong>
+              <p>Gás de 20kg para maior demanda.</p>
+              <a class="btn btn-primary" href="https://wa.me/5551984298427?text=Olá!%20Quero%20pedir%20P20%20gás%2020kg." onclick="trackConversion('produto_p20')">Pedir P20</a>
+            </div>
+
+            <div class="product">
+              <div class="product-icon product-img"><img src="https://i.ibb.co/2Ys18bMh/p45.png" alt="P45 gás 45kg"></div>
+              <strong>P45</strong>
+              <p>Gás 45kg para comércio ou uso intenso.</p>
+              <a class="btn btn-primary" href="https://wa.me/5551984298427?text=Olá!%20Quero%20pedir%20P45." onclick="trackConversion('produto_p45')">Pedir P45</a>
+            </div>
+
+            <div class="product">
+              <div class="product-icon product-img agua-img"><img src="https://i.ibb.co/rR26mdQh/C34-A772-E-32-C1-4-B3-A-AC77-74196217044-A.png" alt="Água mineral 20 litros"></div>
+              <strong>Água 20L</strong>
+              <p>Água mineral em bombona de 20 litros.</p>
+              <a class="btn btn-navy" href="https://wa.me/5551984298427?text=Olá!%20Quero%20pedir%20água%2020%20litros." onclick="trackConversion('produto_agua')">Pedir água</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <h2>Por que escolher a Goularte?</h2>
+              <p>O foco é entregar rápido, atender bem e passar segurança na compra.</p>
+            </div>
+          </div>
+
+          <div class="why-grid">
+            <div class="why-card">
+              <div class="icon"><img src="https://i.ibb.co/fVbS9bX5/100f9b9edd82a733.png" alt="Gás Goularte"></div>
+              <strong>Entrega rápida</strong>
+              <p>Clientes destacam agilidade na entrega e atendimento eficiente.</p>
+            </div>
+            <div class="why-card">
+              <div class="icon">💬</div>
+              <strong>Atendimento educado</strong>
+              <p>Avaliações citam atendentes e entregadores atenciosos.</p>
+            </div>
+            <div class="why-card">
+              <div class="icon"><img src="https://i.ibb.co/fVbS9bX5/100f9b9edd82a733.png" alt="Botijão de gás"></div>
+              <strong>Ajuda na instalação</strong>
+              <p>Clientes relatam auxílio para instalar, trocar e testar o botijão.</p>
+            </div>
+            <div class="why-card">
+              <div class="icon">💰</div>
+              <strong>Preço competitivo</strong>
+              <p>Comentários destacam bom preço e confiança no serviço.</p>
+            </div>
+            <div class="why-card">
+              <div class="icon">🕒</div>
+              <strong>Todos os dias</strong>
+              <p>Atendimento incluindo domingos e feriados.</p>
+            </div>
+            <div class="why-card">
+              <div class="icon">🏳️‍🌈</div>
+              <strong>Empresa acolhedora</strong>
+              <p>Perfil indica empresa que acolhe a comunidade LGBTQ+ e de empreendedoras.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <h2>Avaliações do Google</h2>
+              <p>Prova social real para quem está decidindo onde pedir.</p>
+            </div>
+          </div>
+
+          <div class="review-grid">
+            <div class="review">
+              <div class="stars">★★★★★</div>
+              <p>“Super atenciosos e educados, entrega rápida e entregador e atendente nota 10.”</p>
+              <strong>Adri</strong>
+            </div>
+
+            <div class="review">
+              <div class="stars">★★★★★</div>
+              <p>“Os preços são bons e confio no serviço!”</p>
+              <strong>Ana Bacchini</strong>
+            </div>
+
+            <div class="review">
+              <div class="stars">★★★★★</div>
+              <p>“Sou cliente há anos. A entrega é rápida, o botijão é completamente cheio e dura muito.”</p>
+              <strong>Maria Aparecida Salvador</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap location-grid">
+          <div class="info-card">
+            <div class="simple-head">
+              <h2>Endereço e contato</h2>
+              <p>Goularte - Gás e Água em Porto Alegre | Gás do Povo.</p>
+            </div>
+
+            <div class="info-list">
+              <div class="info-row">
+                <span>📍</span>
+                <div><b>Endereço</b>Av. Saturnino de Brito, 299 - Vila Jardim, Porto Alegre - RS, 91320-001</div>
+              </div>
+              <div class="info-row">
+                <span>☎️</span>
+                <div><b>Telefone</b>0800 600 1002</div>
+              </div>
+              <div class="info-row">
+                <span>💬</span>
+                <div><b>WhatsApp</b>51 98429-8427</div>
+              </div>
+              <div class="info-row">
+                <span>🕒</span>
+                <div><b>Horário</b>Aberto todos os dias, incluindo domingos e feriados</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="simple-head">
+              <h2>Consultar entrega</h2>
+              <p>Mande seu endereço para confirmar disponibilidade no seu bairro.</p>
+            </div>
+
+            <div class="chips">
+              <span class="chip">Vila Jardim</span>
+              <span class="chip">Porto Alegre</span>
+              <span class="chip">Gás de cozinha</span>
+              <span class="chip">Água mineral 20L</span>
+              <span class="chip">Domingos e feriados</span>
+              <span class="chip">0800 gratuito</span>
+            </div>
+
+            <div style="margin-top:24px;">
+              <a class="btn btn-primary" href="https://wa.me/5551984298427?text=Olá!%20Quero%20saber%20se%20a%20Goularte%20entrega%20no%20meu%20bairro." onclick="trackConversion('consulta_bairro')">Consultar pelo WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="wrap">
+          <div class="simple-head">
+            <h2>Dúvidas rápidas</h2>
+            <p>Informações importantes antes do pedido.</p>
+          </div>
+
+          <div class="faq-list">
+            <details>
+              <summary>Qual brinde eu ganho no pedido de gás?</summary>
+              <p>No pedido de gás, o cliente ganha Guaraná 1,5L ou Detergente Líquido 500ml. Consulte disponibilidade no atendimento.</p>
+            </details>
+
+            <details>
+              <summary>Quais produtos a Goularte vende?</summary>
+              <p>P5 gás 5kg, P13 gás de cozinha 13kg, P20 gás 20kg, P45 e água mineral 20L.</p>
+            </details>
+
+            <details>
+              <summary>Atende domingos e feriados?</summary>
+              <p>Sim. A Goularte atende todos os dias, incluindo domingos e feriados.</p>
+            </details>
+
+            <details>
+              <summary>Como faço pedido?</summary>
+              <p>Chame pelo WhatsApp 51 98429-8427 ou ligue para 0800 600 1002.</p>
+            </details>
+
+            <details>
+              <summary>Qual é o endereço?</summary>
+              <p>Av. Saturnino de Brito, 299 - Vila Jardim, Porto Alegre - RS, 91320-001.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="final-box">
+          <h2>Peça agora e escolha seu brinde</h2>
+          <p>Gás de cozinha com Guaraná 1,5L ou Detergente Líquido 500ml. Atendimento rápido pelo WhatsApp.</p>
+          <a class="btn btn-gold" href="https://wa.me/5551984298427?text=Olá!%20Quero%20pedir%20gás%20e%20escolher%20meu%20brinde." onclick="trackConversion('cta_final')">Pedir gás com brinde</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Goularte - Gás e Água em Porto Alegre | Gás de Cozinha e Água Mineral 20L | Gás do Povo<br>
+      Av. Saturnino de Brito, 299 - Vila Jardim, Porto Alegre - RS • WhatsApp: 51 98429-8427 • 0800 600 1002<br>
+      Nota 4,9 no Google com 1.186 avaliações
+    </footer>
+
+    <div class="floating">
+      <a class="btn btn-primary" href="https://wa.me/5551984298427?text=Olá!%20Quero%20pedir%20gás%20com%20brinde." onclick="trackConversion('botao_flutuante')">🎁 Pedir gás com brinde</a>
+    </div>
+  </div>
+
+  <script>
+    function trackConversion(action) {
+      console.log("Conversão:", action);
+
+      /*
+      GOOGLE ADS:
+      Cole a tag global no <head> e substitua este bloco pelo evento real:
+
+      if (typeof gtag === "function") {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-SEU_ID/SEU_LABEL'
+        });
+      }
+      */
+    }
+  </script>
+</body>
+</html>
